@@ -8,3 +8,66 @@
     /* font-weight: <weight>; */
     font-style: normal;
   }
+ /* share style  */
+ .btn-primary{
+  border-radius: 12px;
+  background-color: orange;
+  color: #fff;
+  padding: 10px 60px;
+ }
+ .color-1, .color-2, .color-3, .color-4{
+  font-size: 20px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /* nav section style  */
+  .nav-title{
+    font-size: 32px;
+  }
+  .nav-bar{
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .nav-item{
+    text-decoration: none;
+    list-style: none;
+  }
+  .nav-section{
+    display: flex;
+  }
+  .nav-title{
+    margin: 5px;
+  }
+  .nav-bar{
+    justify-content: space-around;
+   
+  }
+  .nav-link{
+    text-decoration: none
+  }
+  .color-1{
+    color: orange;
+
+  }
+  .color-2{
+    color: blue;
+  }
+  .color-3{
+    color: #05D4DF;
+  } 
+  .color-4{
+    color: #5D58EF;
+  }
+  
+    
