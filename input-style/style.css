@@ -26,7 +26,15 @@
 .color-4 {
   font-weight: 700;
 }
-
+main{
+  background-image: url('../assets/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.curriculum-title{
+  font-size: 20px;
+}
 
 
 
@@ -44,8 +52,7 @@
 
 .nav-bar-section {
   display: flex;
-  margin-left: 140px;
-  margin-right: 140px;
+   max-width: 1440px;
   justify-content: space-around;
   margin-top: 20px;
   align-items: center;
@@ -76,7 +83,7 @@ size: 20px;
   text-decoration: none
 }
 
-.color-1 {
+.color-1, .last-discription-two {
   color: orange;
 
 }
@@ -85,11 +92,11 @@ size: 20px;
   color: blue;
 }
 
-.color-3 {
+.color-3, .last-discription-one{
   color: #05D4DF;
 }
 
-.color-4 {
+.color-4, .last-discription-tree {
   color: #5D58EF;
 }
 
@@ -135,7 +142,33 @@ size: 20px;
 }
 
 /* main section style */
-
+.conteiner{
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.conteiner-title{
+  display: flex;
+  margin: 0 140px;
+  gap: 24px;
+}
+.curriculum-one{
+  background-image: linear-gradient(to top, #fff, rgba(198, 233, 247, 0.73));
+  text-align: center;
+  border-radius: 18px;
+  padding: 30px;
+}
+.curriculum-two{
+  background-image: linear-gradient(to top, #fff, rgba(255, 244, 220, 1));
+  border-radius: 18px;
+  padding: 30px;
+}
+.curriculum-tree{
+  background-image: linear-gradient(to top, #fff, rgba(242, 232, 255, 1));
+  border-radius: 18px;
+  padding: 30px;
+}
 
 
 
@@ -184,13 +217,28 @@ size: 20px;
   .nav-bar-section{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
+  
+  
   }
   /* bannar related responsive */
   @media screen and (min-width: 577px) and (max-width:1440px) {    
     .hr-line, .bare-img{
       display: none;
+    }
+    
+  }
+  /* Standard Curriculum size */
+  @media screen and (max-width:576px) {
+    .conteiner{
+    align-items: center;
+    }
+    .conteiner-title{
+      flex-direction: column;
+      max-width: 390px;
+      margin: 0 auto;
+      gap: 20px;
     }
     
   }
